@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f1e7">
+<title>易路 · 六十四卦背诵</title>
+<link rel="stylesheet" href="css/style.css?v=20260915g">
+</head>
+<body>
+<header class="app-header">
+  <div class="header-inner">
+    <h1>易路</h1>
+    <p id="header-sub">一阴一阳之谓道 · 由浅入深背易卦</p>
+  </div>
+</header>
+
+<main id="app">
+  <section id="view-learn" class="view"></section>
+  <section id="view-gua" class="view hidden"></section>
+  <section id="view-quiz" class="view hidden"></section>
+</main>
+
+<nav class="tabbar" id="tabbar">
+  <button data-tab="learn" class="active"><span>学习</span></button>
+  <button data-tab="gua"><span>卦象</span></button>
+  <button data-tab="quiz"><span>自测</span></button>
+</nav>
+
+<!-- 六十四卦详情层 -->
+<div id="hex-detail" class="detail hidden"></div>
+<!-- 八卦详情弹层 -->
+<div id="modal" class="modal hidden" onclick="if(event.target===this)closeModal()"></div>
+
+<!-- 改动 js/css 后请同步提升版本号，避免浏览器沿用旧缓存 -->
+<script src="js/data-basics.js?v=20260915g"></script>
+<script src="js/data-pinyin.js?v=20260915g"></script>
+<script src="js/data-hex1.js?v=20260915g"></script>
+<script src="js/data-hex2.js?v=20260915g"></script>
+<script src="js/data-hex3.js?v=20260915g"></script>
+<script src="js/data-hex4.js?v=20260915g"></script>
+<script src="js/app.js?v=20260915g"></script>
+</body>
+</html>
